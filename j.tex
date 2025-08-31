@@ -24,6 +24,8 @@
 
 \usepackage{colortbl}
 \usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{blindtext}
 
 \usepackage{tabularx}
 \newcolumntype{Y}{>{\centering\arraybackslash}X}
@@ -402,7 +404,7 @@ If they fire me I'll just go do something else...''
 
 \chapter{8/18/2025 through 8/22/2025}
 
-aThe focus of this week was to give the students a very firm grasp of
+The focus of this week was to give the students a very firm grasp of
 the rules governing the evaluation of mathematical expressions
 containing exponents.
 
@@ -415,16 +417,25 @@ Mrs. Toelle; Unless otherwise noted, my contributions this week are in
 the section entitiled ``Introduction/Anticipatory Set'' but in the
 classroom we call the ``Fluency'' exercise.
 
+Figure \ref{qqt_ex} shows a pdf of the ``Quiz-Quiz Trade'' cards which I made.
+They can be printed out and cut along the guidelines to fit on 3x5
+cards.  Many thanks to Mrs. Toelle for reviewing them for aptness and
+correction.
+
+\begin{figure}[h]
+  \begin{minipage}[t]{5in}
+    \includepdf[page=1, scale=0.65]{qq_t.pdf}
+    \caption{Quiz-Quiz Trade cards for exponents}
+  \end{minipage}
+  \label{qqt_ex}
+\end{figure}
+  
+
+
 \include{lp_aug_21}
 
 \include{lp_aug_22}
 
-The following is a pdf of the ``Quiz-Quiz Trade'' cards which I made.
-they can be printed out and cut along the guidelines to fit on 3x5
-cards.  many thanks to mrs. toelle for reviewing them for aptness and
-correction.
-
-\includepdf[pages=-]{qq_t.pdf}
 
 \chapter{8/25/2025 through 8/29/2025}
 
@@ -451,7 +462,7 @@ handsome, wears his hear long and pulled into a pony tail.  He is
 charismatic, always cheerful, and is liked by everyone.  In addition,
 he has about as much energy as a nuclear powerplant.  He reminds me
 very much of some salesmen I've known in my previous careers.  Very
-sucessful salesmen, those people who you just can't help liking and
+sucessful salesmen: those people who you just can't help liking and
 have enough energy to make it through endless days and hours of
 negotiations in order to close the sale, without ever losing their
 good spirits or smiles.
@@ -462,9 +473,9 @@ class, he is also emotionally less mature.  He has a hard time staying
 in his seat, and faces endless temptations to talk in class-both
 because he loves talking, and everybody else loves talking to him.
 
-Alas, this is not the only challenges D faces.  He has been shuttled
+Alas, these are not the only challenges D faces.  He has been shuttled
 back and forth between his mother and grandmother.  He has apparently
-also had to live in a homeless shelter.  Z
+also had to live in a homeless shelter for some time. 
 
 When I think about the amount troubles and trials which have been
 dumped on D, through no fault of his own, when his is a {\em child},
@@ -494,8 +505,6 @@ the issue in our PLC, and Mrs. Toelle suggested I pull him and another
 student for seperate instruction.  The lesson was about how to use
 Desmos to find square roots and cube roots.  He very quickly learned
 how to use Desmos to find square roots.  He actualy is pretty good at
-
-
 math!  But he had a problem doing cube roots....what gives?
 
 Yeah, apparently Desmos has {\em two} different calculators, one which
@@ -522,7 +531,7 @@ which featured questions about the vocablary used to pose and solve
 square and cube and root problems. (See figure \ref{qqt_root})
 
 I'm only going to have 4 more months with D.  I hope he doesn't end up
-like countless of myJ uniors and Seniors did when I was teaching
+like countless of my Juniors and Seniors did when I was teaching
 Algebra II....we lost them somewhere in middle school math, and they
 never really were able to get back on board.  We didn't lose D today,
 but all the other challenges he faces have not gone away, and a lot
@@ -536,13 +545,132 @@ can happen between now and when he takes Algebra II.
 
 \include{lp_aug_28}
 
-The followiong is a pdf of the ''Quiz-Quiz Trade'' cards which I made
-for to review squares, cubes, and square roots.
 
-\begin{figure}
-  \includepdf[pages=-]{QQT_square_and_cube.pdf}
-  \caption{Quiz-Quiz Trade Cards for practicing vocabulary}
+\begin{figure}[h]
+  \begin{minipage}[t]{5in}
+    \includepdf[pages=-, scale=0.65]{QQT_square_and_cube.pdf}
+    \caption{Quiz-Quiz Trade Cards for practicing vocabulary}
+  \end{minipage}
   \label{qqt_root}
 \end{figure}
+
+\include{lp_aug_29}
+
+\begin{figure}[h]
+\renewcommand{\arraystretch}{2}
+\begin{tabular}{|@{}|c@{\hspace{1cm}}|c@{}|}
+  \hline
+  & \\
+  % Card 1
+  \begin{minipage}[t]{3in}
+    \centering
+    \begin{tikzpicture}[scale=0.8]
+      % Triangle
+      \draw[thick] (0,0) -- (3,0) -- (0,4) -- cycle;
+      % Labels
+      \node[below] at (1.5,0) {3};
+      \node[left] at (0,2) {4};
+      \node[above right] at (1.5,2) {x};
+      % Right angle marker
+      \draw (0,0.3) -- (0.3,0.3) -- (0.3,0);
+    \end{tikzpicture}
+    \\[0.5cm]
+    Next station: $x-4$
+  \end{minipage}
+  &
+  % Card 2
+  \begin{minipage}[t]{3in}
+    \centering
+    \begin{tikzpicture}[scale=0.8]
+      % Triangle
+      \draw[thick] (0,0) -- (6,0) -- (0,2.5) -- cycle;
+      % Labels
+      \node[below] at (3,0) {6};
+      \node[left] at (0,1.25) {2.5};
+      \node[above right] at (3,1.25) {x};
+      % Right angle marker
+      \draw (0,0.3) -- (0.3,0.3) -- (0.3,0);
+    \end{tikzpicture}
+    \\[0.5cm]
+    Next station: $x-5$
+  \end{minipage}
+  \\[1cm]
+  \hline
+  & \\
+  % Card 3
+  \begin{minipage}[t]{3in}
+    \centering
+    \begin{tikzpicture}[scale=0.8]
+      % Triangle
+      \draw[thick] (0,0) -- (4,0) -- (0,3) -- cycle;
+      % Labels
+      \node[below] at (2,0) {4};
+      \node[left] at (0,1.5) {3};
+      \node[above right] at (2,1.5) {x};
+      % Right angle marker
+      \draw (0,0.3) -- (0.3,0.3) -- (0.3,0);
+    \end{tikzpicture}
+    \\[0.5cm]
+    Next station: $x-2$
+  \end{minipage}
+  &
+  % Card 4
+  \begin{minipage}[t]{3in}
+    \centering
+    \begin{tikzpicture}[scale=0.5]
+      % Triangle
+      \draw[thick] (0,0) -- (8,0) -- (0,6) -- cycle;
+      % Labels
+      \node[below] at (4,0) {8};
+      \node[left] at (0,3) {6};
+      \node[above right] at (4,3) {x};
+      % Right angle marker
+      \draw (0,0.3) -- (0.3,0.3) -- (0.3,0);
+    \end{tikzpicture}
+    \\[0.5cm]
+    Next station: $x-4$
+  \end{minipage}
+  \\[1cm]
+  \hline
+  & \\
+  % Card 5
+  \begin{minipage}[t]{3in}
+    \centering
+    \begin{tikzpicture}[scale=0.4]
+      % Triangle
+      \draw[thick] (0,0) -- (5,0) -- (0,12) -- cycle;
+      % Labels
+      \node[below] at (2.5,0) {5};
+      \node[left] at (0,6) {12};
+      \node[above right] at (2.5,6) {x};
+      % Right angle marker
+      \draw (0,0.3) -- (0.3,0.3) -- (0.3,0);
+    \end{tikzpicture}
+    \\[0.5cm]
+    Next station: $x-8$
+  \end{minipage}
+  &
+  % Card 6
+  \begin{minipage}[t]{3in}
+    \centering
+    \begin{tikzpicture}[scale=0.2]
+      % Triangle
+      \draw[thick] (0,0) -- (7,0) -- (0,24) -- cycle;
+      % Labels
+      \node[below] at (3.5,0) {7};
+      \node[left] at (0,12) {24};
+      \node[above right] at (3.5,12) {x};
+      % Right angle marker
+      \draw (0,0.3) -- (0.3,0.3) -- (0.3,0);
+    \end{tikzpicture}
+    \\[0.5cm]
+    Next station: $x-18$
+  \end{minipage} \\
+  & \\
+  \hline
+\end{tabular}
+\caption{Pythagorean Theorem Practice Problems}
+\end{figure}
+
 
 \end{document}
